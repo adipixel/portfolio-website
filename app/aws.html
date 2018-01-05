@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+
+
+<body>
+    <div class="container">
+      <div id="header"></div>
+    </div>
+    <div class="container project-details">
+      <div class="row">
+        <div class="col-12 page-title-holder">
+          <h1 class="">Linux Server Configuration</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="divider"></div>
+          <p>Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into a fully functional web application server, including Apache Web Server and PostgreSQL database server.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <a href="http://ec2-13-59-55-238.us-east-2.compute.amazonaws.com/" target="_blank">See Project Live</a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a href="https://github.com/adipixel/aws-linux-server-configuration" target="_blank">Github repo</a>
+            </div>
+            <div class="col-12">
+              <div class="divider-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <img class="img-fluid" src="images/aws2.png">
+          <label class="italic">AWS server</label>
+          <img class="img-fluid" src="images/aws1.png">
+          <label class="italic">Live hosted WSGI application</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="caption">Server Details</div>
+          <table>
+            <tr>
+              <td><p>Service Provider:</p></td>
+              <td><p>Amazon Web Service - Lightsail</p></td>
+            </tr>
+            <tr>
+              <td><p>Operating System:</p></td>
+              <td><p>Ubuntu</p></td>
+            </tr>
+            <tr>
+              <td><p>IP address:</p></td>
+              <td><p>13.59.55.238</p></td>
+            </tr>
+            <tr>
+              <td><p>URL:</p></td>
+              <td><p>ec2-13-59-55-238.us-east-2.compute.amazonaws.com</p></td>
+            </tr>
+          </table>
+
+          <div class="caption">Server Configurations</div>
+          <p class="italic">User Management</p>
+          <ul>
+            <li>Cannot login as root remotely</li>
+            <li>A new user - grader is created and can user can run commands using sudo to inspect files that are readable only by root</li>
+          </ul>
+
+          <p class="italic">Security</p>
+          <ul>
+            <li>Ports allowed by Uncomplicated Firewall for SSH, HTTP and NTP are 2200, 80 and 123 respectively</li>
+            <li>SSH is hosted on non-default port</li>
+            <li>Key-based SSH authentication is enforced</li>
+            <li>All system packages have been updated to most recent versions</li>
+          </ul>
+
+          <p class="italic">Application Functionality</p>
+          <ul>
+            <li>The web server responds on port 80</li>
+            <li>Database server has been configured to serve data (PostgreSQL)</li>
+            <li>Web server has been configured to serve the Item Catalog application as a WSGI app</li>
+          </ul>
+
+
+          <div class="caption">Tools, Technologies and Services used</div>
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="">
+                <li>Amazon Web Service</li>
+                <li>Linux / Ubuntu</li>
+                <li>Git Bash</li>
+              </ul>
+            </div>
+          </div>
+
+          <img class="img-fluid" src="images/aws3.jpg">
+          <label class="italic">Configured the Uncomplicated Firewall</label>
+
+
+          <div class="caption">Lessons learned</div>
+          <ul>
+            <li>To access, secure, and perform the initial configuration of a bare-bones Linux server</li>
+            <li>Deployment of web applications to a publicly accessible server</li>
+            <li>Properly securing the application ensures that the application remains stable and that the user’s data is safe</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div> <!-- container end -->
+
+
+    <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!--build:js js/main.min.js -->
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

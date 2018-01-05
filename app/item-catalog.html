@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+
+
+<body>
+    <div class="container">
+      <div id="header"></div>
+    </div>
+    <div class="container project-details">
+      <div class="row">
+        <div class="col-12 page-title-holder">
+          <h1 class="">Item Catalog Application</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="divider"></div>
+          <p>This is a RESTful web application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <a href="http://ec2-13-59-55-238.us-east-2.compute.amazonaws.com/" target="_blank">See Project Live</a>
+            </div>
+            <div class="col-6 col-md-3">
+              <a href="https://github.com/adipixel/item-catalog" target="_blank">Github repo</a>
+            </div>
+            <div class="col-12">
+              <div class="divider-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <img class="img-fluid" src="images/item-catalog-banner.png">
+          <label class="italic">All items landing page</label>
+          <img class="img-fluid" src="images/item-catalog1.png">
+          <label class="italic">Google Authentication</label>
+          <img class="img-fluid" src="images/item-catalog2.png">
+          <label class="italic">CRUD operation (Update)</label>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="caption">Summary</div>
+          <ul>
+            <li>This RESTful web application is built using the Python framework Flask along with implementing third-party Google's OAuth 2.0 authentication for securing from CSRF attacks.</li>
+            <li>The project implements a JSON endpoint that serves the same information as displayed in the HTML endpoints for an arbitrary item in the catalog.</li>
+            <li>This RESTful web application is built using the Python framework Flask along with implementing third-party Google's OAuth 2.0 authentication for securing from CSRF attacks.</li>
+            <li>Page implements a third-party authentication and authorization service (like Google Accounts) instead of implementing its own authentication and authorization spec. The important pages which updates the database information are secured and needs authentication before using them</li>
+            <li>This web application is built using SQLAlchemy - SQL toolkit and object-relational mapper for the Python.</li>
+            <li>Also, the code is neatly formatted and compliant with the Python PEP 8 style guide</li>
+          </ul>
+
+          <div class="caption">Tools, Technologies and Services used</div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <ul class="">
+                <li>Python / Flask framework</li>
+                <li>Sqlite / SQLAlchemy</li>
+                <li>HTML5 / CSS3</li>
+                <li>JSON</li>
+                <li>Javascript / jQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <ul class="">
+              <li>Google's oAuth 2.0</li>
+              <li>Oracle's VirtualBox</li>
+              <li>Linux - Ubuntu</li>
+              <li>Vagrant</li>
+              <li>Git / github.com</li>
+            </ul>
+            </div>
+          </div>
+
+          <img class="img-fluid" src="images/item-catalog3.png">
+          <label class="italic">Json endpoint result</label>
+
+
+          <div class="caption">JSON endpoints</div>
+          <ul>
+            <li><code>/catalog/JSON</code></li>
+            <li><code>/catalog/CATEGORY_NAME/items/JSON</code></li>
+            <li><code>/catalog/CATEGORY_NAME/ITEM_NAME/JSON</code></li>
+          </ul>
+
+          <div class="caption">Lessons learned</div>
+          <ul>
+            <li>To develop a RESTful web application using the Python framework Flask </li>
+            <li>Implementing third-party OAuth authentication</li>
+            <li>When to properly use the various HTTP methods available and how these methods relate to CRUD (create, read, update and delete) operations</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div> <!-- container end -->
+
+
+    <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!--build:js js/main.min.js -->
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

@@ -4,29 +4,29 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!--build:css css/styles.min.css-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+  <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
 </head>
 
+
 <body>
   <div class="cont">
       <div class="container">
-        <header class="row align-items-end" style="height: 100px;">
-          <div class="col-12 col-lg-8">
-            <a class="" href="#">Aditya Mhamunkar</a>
+        <header class="row align-items-center">
+          <div class="name col-12 col-lg-8">
+            <a class="" href="/">Aditya Mhamunkar</a>
           </div>
           <div class="col-12 col-lg-4">
             <div class="row">
               <div class="col">
-                <a class="" href="#">Projects</a>
+                <a class="" href="projects.html">Projects</a>
               </div>
               <div class="col">
-                <a class="" href="#">My Story</a>
+                <a class="" href="mystory.html">My Story</a>
               </div>
               <div class="col">
                 <a class="" href="#">Connect</a>
@@ -39,7 +39,7 @@
             <img style="padding: 3.5em 0 1em;" src="images/logo.png">
             <h1>Hello, I'm Aditya.</h1>
             <h1>I develop web applications.</h1>
-            <p>I’m a Software Engineer with a passion for Web Development and User Experience improvement, and currently a Grad student at the State University of New York. Here is <a href="#">my story</a>.</p>
+            <p>I’m a Software Engineer with a passion for Web Development and User Experience improvement, and currently a grad student at the State University of New York. Here is <a href="mystory.html">my story</a>.</p>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
           <img class="img-thumbnail rounded" src="images/item-catalog.png">
         </div>
         <div class="col-12 col-md-7 col-sm-6">
-          <a class="" style="">Item Catalog Application</a>
+          <a class="" src="item-catalog.html">Item Catalog Application</a>
           <p>A RESTful web application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.</p>
         </div>
       </div>
@@ -73,7 +73,7 @@
           <img class="img-thumbnail rounded" src="images/neighbor.png">
         </div>
         <div class="col-12 col-md-7 col-sm-6">
-          <a>Neighborhood Map</a>
+          <a href="nmap.html">Neighborhood Map</a>
           <p>A single-page application using KnockoutJS with a map of neighborhood, including map markers for locations, a search function to discover these locations, and a listview to support simple browsing of all locations. Also added few third-party APIs like Four Square, Wikipedia, etc. to provide additional information about these locations.</p>
         </div>
       </div>
@@ -83,45 +83,17 @@
           <img class="img-thumbnail rounded" src="images/aws.jpg">
         </div>
         <div class="col-12 col-md-7 col-sm-6">
-          <a>Linux Server Configuration</a>
+          <a href="aws.html">Linux Server Configuration</a>
           <p>Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into a fully functional web application server, including Apache Web Server and PostgreSQL database server.</p>
         </div>
       </div>
       <div class="divider-dots"></div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-xs-12" style="font-family: 'Lato', sans-serif; font-size: 1.2em; margin: 0 0 10px 0;">
-            <span style="display: block;">© 2018 Aditya Mhamunkar</span>
-            All rights reserved.
-          </div>
-          <div class="col-md-6 col-xs-12">
-            <div class="row">
-              <div class="col-6">
-                <table>
-                  <tr><td><a href="">Send me an Email</a></td></tr>
-                  <tr><td><a href="">Follow me on Github</a></td></tr>
-                  <tr><td><a href="">Connect me on Linkedin</a></td></tr>
-                </table>
-              </div>
-              <div class="col-6">
-                <table>
-                  <tr><td><a href="">Home</a></td></tr>
-                  <tr><td><a href="">My Projects</a></td></tr>
-                  <tr><td><a href="">My Story</a></td></tr>
-                  <tr><td><a href="">Connect</a></td></tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer"></div>
 
   <!--build:js js/main.min.js -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   <script src="js/lib/a-library.js"></script>

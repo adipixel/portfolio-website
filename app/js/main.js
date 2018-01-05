@@ -1,5 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App.jsx';
-
-ReactDOM.render(<App />, document.getElementById('app'));
+$(document).ready(function(){
+  $.get("../footer.html", function(data) {
+    $("#footer").html(data);
+  });
+  $.get("../header.html", function(data) {
+    $("#header").html(data);
+  });
+});
