@@ -1,1 +1,5 @@
-console.log('This is the Main.js file. It should be the 3rd and final file');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
+
+ReactDOM.render(<App />, document.getElementById('app'));
